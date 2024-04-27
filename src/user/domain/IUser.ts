@@ -1,6 +1,7 @@
-import { User } from "./User.js";
+import { User } from './User.js';
 
 export interface IUser {
-    create(email: string, password: string): Promise<User>;
-    find(email: string): Promise<User | null>;
+  create(email: string, password: string): Promise<User>;
+  find(email: string): Promise<User | null>;
+  findAll(): Promise<User[]>;
 }
